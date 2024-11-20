@@ -13,7 +13,10 @@ connectDb();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: [
+      "http://localhost:5173",
+      "https://quickplate-backend.onrender.com",
+    ],
     credentials: true,
   })
 );
