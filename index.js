@@ -13,7 +13,9 @@ connectDb();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://quick-plate.vercel.app/"],
+    origin: ["https://quick-plate.vercel.app/"],
+    methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
+    allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
     credentials: true,
   })
 );
