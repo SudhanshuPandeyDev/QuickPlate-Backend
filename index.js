@@ -13,10 +13,7 @@ connectDb();
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://quickplate-backend.onrender.com",
-    ],
+    origin: ["http://localhost:5173", "https://quick-plate.vercel.app/"],
     credentials: true,
   })
 );
